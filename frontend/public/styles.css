@@ -1,0 +1,94 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('https://t.ly/TgStb') no-repeat center center fixed;
+    background-size: cover;
+}
+.navbar {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    padding: 15px; /* Space around the items */
+    position: fixed; /* Keep the navbar at the top */
+    width: 100%; /* Full width */
+    top: 0; /* Position it at the top */
+    z-index: 1000; /* Ensure it's above other elements */
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between title and links */
+    align-items: center; /* Center items vertically */
+}
+
+.navbar-title {
+    color: white; /* Title text color */
+    font-size: 24px; /* Title font size */
+    flex-grow: 1; /* Allow title to take up available space */
+    text-align: left; /* Center the title text */
+}
+
+.navbar-links {
+    list-style-type: none; /* Remove bullets */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Use flexbox for horizontal layout */
+}
+
+.navbar-links li {
+    margin-left: 15px; /* Space between items */
+}
+
+.navbar-links a {
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline */
+    font-size: 18px; /* Font size */
+    padding: 10px 15px; /* Add padding for clickable area */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.navbar-links a:hover {
+    background-color: rgba(255, 255, 255, 0.3); /* Change background on hover */
+}
+
+.center-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height */
+    text-align: center; /* Center text */
+}
+
+.welcome-title {
+    font-size: 48px; /* Make the title large */
+    color: #333; /* Dark text color */
+    margin-bottom: 20px; /* Space between title and paragraph */
+}
+
+.bio-text {
+    font-size: 18px; /* Smaller font for the paragraph */
+    color: #666; /* Lighter text color */
+    max-width: 600px; /* Limit paragraph width */
+    line-height: 1.6; /* Line height for readability */
+    margin-bottom: 30px; /* Add space between paragraph and buttons */
+}
+
+.button-container {
+    display: flex;
+    gap: 20px; /* Add space between the buttons */
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007BFF; /* Blue button background */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
