@@ -9,9 +9,11 @@ Method: POST
 # Body (JSON)
 
     {
-    "username": "Username",
+    "username": "User",
     "password": "Password",
-    "role": "EMPLOYEE"  // or "ADMIN" // "MANAGER" 
+     "role": "EMPLOYEE"  // or "ADMIN" // "MANAGER",
+    "email": "example@example.com",
+    "fullName": "Example User"
     }
     
 # Response
