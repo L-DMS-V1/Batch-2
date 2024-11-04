@@ -42,7 +42,7 @@ _____________________________________________________________
 # 3. Protected User Endpoint (Requires JWT Token)
 Method: GET
 
-    URL: http://localhost:8081/api/auth/User
+    URL: http://localhost:8081/api/auth/Admin
 
 # Authorization: 
 Type < Select Bearer Token > and Paste the Generated Token.
