@@ -1,0 +1,57 @@
+.app-container {
+  width: 40%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.feedback-form {
+  margin: 20px 0;
+}
+
+textarea {
+  width: 80%;
+  height: 100px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+input[type="number"], input[type="text"] {
+  padding: 10px;
+  margin: 5px;
+  width: 80%;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.feedback-list table {
+  margin-top: 20px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.feedback-list table, th, td {
+  border: 1px solid #ddd;
+}
+
+.feedback-list th, td {
+  padding: 8px 12px;
+  text-align: left;
+}
+
+.feedback-list th {
+  background-color: #f2f2f2;
+}
+
+.reports-section, .pie-chart-section {
+  margin-top: 30px;
+}
