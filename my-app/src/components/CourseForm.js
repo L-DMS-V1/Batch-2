@@ -1,4 +1,3 @@
-// components/CourseForm.js
 import React, { useState } from "react";
 
 function CourseForm({ onCreateCourse }) {
@@ -8,8 +7,6 @@ function CourseForm({ onCreateCourse }) {
   const [mediaUrl, setMediaUrl] = useState("");
   const [selectedEmployee, setSelectedEmployee] = useState("");
   const [videoPreviewUrl, setVideoPreviewUrl] = useState(null);
-
-  const employees = Array.from({ length: 20 }, (_, i) => `Employee ${i + 1}`);
 
   const handleSubmit = (e) => {
     e.preventDefault(); // Prevent page reload
@@ -94,18 +91,13 @@ function CourseForm({ onCreateCourse }) {
         <input type="file" accept="video/*" onChange={handleFileChange} />
       )}
       <label>Assign To</label>
-      <select
+      <input
+        type="text"
         value={selectedEmployee}
         onChange={(e) => setSelectedEmployee(e.target.value)}
+        placeholder="Enter Employee Name"
         required
-      >
-        <option value="">Select Employee</option>
-        {employees.map((employee, index) => (
-          <option key={index} value={employee}>
-            {employee}
-          </option>
-        ))}
-      </select>
+      />
       <button type="submit" disabled={!courseName || !courseDescription || !selectedEmployee}>
         Create & Assign Course
       </button>
